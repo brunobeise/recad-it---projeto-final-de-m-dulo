@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+ <nav>
+    <img onclick="reloadrecados()" style="width: 80%; margin-bottom: -30px;" src="./assets/recaditlogo.png" alt="" srcset="">
+    <img onclick="abrircadastro()" src="./assets/botao-adicionar.png" alt="" srcset=""> <br>
+    <img onclick="trocarfundo()" src="./assets/trocarfundo.png" alt="" srcset=""> <br>
+    <img onclick="encerrarsessão()"  src="./assets/sair.png " srcset=""> <br>
+ </nav>
+ <div id="background">
+ <div id="containerrecados">
+ </div>
+</div>
+ <div class="dn" id="cadastrorecado">
+            <form id="formcadastro" action="">
+                <input placeholder="Título do Lembrete" type="text" name="" maxlength="25" id="titulo">
+                <textarea placeholder="Descrição do lembrete"  id="desc" name="descrição" rows="4" cols="50" maxlength="157"></textarea>
+           <input class="btncadastrar" type="submit" value="Cadastrar">
+            <input onclick="fecharcadastro()"  class="btncadastrar" type="button" value="Cancelar">
+        </form>
+       
+    </div>
+        
+    </form>
+</div>
+<dialog id="painel" >
+    <input style="font-size: 50px;" type="text" name="" maxlength="25" id="titulopainel">
+    <textarea style="font-size: 20px;"  id="descpainel" name="descrição" rows="4" cols="50" maxlength="157"></textarea>
+    <input id="attbutton" style="margin-bottom: -10px; width: 240px;" class="btncadastrar" type="submit" value="Aplicar Alterações ✔"> <br>
+    <input style="width: 140px;" id="fpainel" onclick="fecharpainel()"  class="btncadastrar" type="button" value="Cancelar ❌">
+    <input style="width: 140px;" id="apagarbutton" onclick="fecharpainel() "  class="btncadastrar" type="button" value="Apagar 🚮">
+</dialog>
+</body>
+</html>
